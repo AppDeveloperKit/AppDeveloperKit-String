@@ -3,9 +3,9 @@ import UIKit
 import AppDeveloperKit_String
 
 
-// ===========================
-// SC_String Overview
-// ===========================
+// ================================
+// AppDeveloperKit_String Overview
+// ================================
 //
 // - Perl inspired matches and substitutions (String Extension) using =~ operator.
 // - Regex wrapper class for more typical method interface.
