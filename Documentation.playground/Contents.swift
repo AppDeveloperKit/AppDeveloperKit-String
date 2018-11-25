@@ -49,18 +49,18 @@ let count = str =~ (.S,"(\\w)(\\w)","$2$1","g") // count = 2, str = "XW ZY"
 // Cocoapod installation - grab all components or pick and choose:
 //
 // # All components
-// pod 'SC-String'
+// pod 'AppDeveloperKit-String'
 //
 //
 // # Perl inspired matching/substitutions using =~ using String extension.
 // # Virtually no chance of conflict with other library string extensions.
-// pod 'SC-String/String'
+// pod 'AppDeveloperKit-String/String'
 //
-// # Wrapper class around String extensions.  Depends on and will load SC-String/String.
-// pod 'SC-String/Regex'
+// # Wrapper class around String extensions.  Depends on and will load AppDeveloperKit-String/String.
+// pod 'AppDeveloperKit-String/Regex'
 //
 // # String subscripting using String extension.
-// pod 'SC-String/Subscript'
+// pod 'AppDeveloperKit-String/Subscript'
 //
 
 
