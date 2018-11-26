@@ -44,9 +44,12 @@ pod 'AppDeveloperKit-String/Subscript'
 Integrate your dependencies using frameworks by adding `use_frameworks!` to your Podfile. Then run `pod install`.
 
 
-## Match Examples
+## Documentation
 
-See [Documentation.playground](https://github.com/AppDeveloperKit/AppDeveloperKit-String/blob/master/Documentation.playground/Contents.swift) for a more complete specification of AppDeveloperKit-String.
+See [Documentation.playground](https://github.com/AppDeveloperKit/AppDeveloperKit-String/blob/master/Documentation.playground/Contents.swift) for a complete specification of AppDeveloperKit-String presented as a Swift playground.
+
+
+## Match Examples
 
 
 Capture groups returned as a tuple.  Closure provides prematch, match and postmatch.
