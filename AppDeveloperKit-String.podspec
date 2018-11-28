@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 s.name              = 'AppDeveloperKit-String'
 
-s.version           = '0.0.1'
+s.version           = '1.0.0'
 s.summary           = 'String utilities - regular expressions and subscripting'
 s.homepage          = 'https://github.com/AppDeveloperKit/AppDeveloperKit-String'
 
