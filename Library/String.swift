@@ -596,6 +596,14 @@ public extension String {
                 
                 // First element in range is the overall match of regular expression
                 if rangeIndex == 0 {
+                    
+                    // If we have a match, then resultArr should not be nil.
+                    // It might remain empty though if we don't have any capture groups,
+                    // and are not recording matches to this array due to global flag.
+                    if result.resultArr == nil {
+                        result.resultArr = []
+                    }
+                    
                     result.match = String(match)
                     
                     // Prematch
@@ -609,12 +617,7 @@ public extension String {
                     if (numberOfRanges == 1) && foundGlobalFlag {
                         result.resultRangeArr.append(startIdx..<endIdx)
                         
-                        if result.resultArr == nil {
-                            result.resultArr = [String(match)]
-                        }
-                        else {
-                            result.resultArr?.append(String(match))
-                        }
+                        result.resultArr?.append(String(match))
                     }
                     
                 }
@@ -622,12 +625,7 @@ public extension String {
                 else {
                     result.resultRangeArr.append(startIdx..<endIdx)
                     
-                    if result.resultArr == nil {
-                        result.resultArr = [String(match)]
-                    }
-                    else {
-                        result.resultArr?.append(String(match))
-                    }
+                    result.resultArr?.append(String(match))
                 }
             }
             

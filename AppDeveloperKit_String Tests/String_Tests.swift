@@ -395,7 +395,7 @@ class String_Tests: XCTestCase {
     func checkMatch(s str: String, pat pattern: String, pre preMatch: String?, m match: String?, post postMatch: String?, arr: [String], flags: String = "") -> String? {
         
         // Array result without closure
-        if let result = checkArrayMatch(s: str, pat: pattern, arr: arr, flags: flags) {
+        if let result = checkArrayMatch(s: str, pat: pattern,  m: match, arr: arr, flags: flags) {
             return  TestUtils.errorMsg("") + result
         }
 
@@ -420,7 +420,7 @@ class String_Tests: XCTestCase {
     
     
     // Check array return result without a closure
-    func checkArrayMatch(s str: String, pat pattern: String, arr: [String], flags: String) -> String? {
+    func checkArrayMatch(s str: String, pat pattern: String, m match: String?, arr: [String], flags: String) -> String? {
         
         var arrResult: [String] = []
         var arrResultOptional: [String]?
@@ -447,7 +447,7 @@ class String_Tests: XCTestCase {
         //
         if flags == "" {
             arrResultOptional = str =~ (.M, pattern)
-            if arr.isEmpty {
+            if match == nil {
                 if arrResultOptional != nil {
                     return TestUtils.errorMsg("Array result not nil")
                 }
@@ -460,7 +460,7 @@ class String_Tests: XCTestCase {
         }
 
         arrResultOptional = str =~ (.M, pattern, flags)
-        if arr.isEmpty {
+        if match == nil {
             if arrResultOptional != nil {
                 return TestUtils.errorMsg("Array result not nil")
             }
@@ -561,7 +561,7 @@ class String_Tests: XCTestCase {
             }
             
             
-            if arr.isEmpty {
+            if match == nil {
                 if arrResultOptional != nil {
                     return TestUtils.errorMsg("Array result not nil")
                 }
@@ -594,7 +594,7 @@ class String_Tests: XCTestCase {
         }
         
         
-        if arr.isEmpty {
+        if match == nil {
             if arrResultOptional != nil {
                 return TestUtils.errorMsg("Array result not nil")
             }
