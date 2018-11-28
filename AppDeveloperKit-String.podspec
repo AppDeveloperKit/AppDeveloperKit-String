@@ -3,13 +3,14 @@ Pod::Spec.new do |s|
 
 s.name              = 'AppDeveloperKit-String'
 
-s.version           = '1.0.0'
+s.version           = '1.0.1'
 s.summary           = 'String utilities - regular expressions and subscripting'
 s.homepage          = 'https://github.com/AppDeveloperKit/AppDeveloperKit-String'
 
 s.author            = { 'Name' => 'Scott Carter' }
 s.license           = { :type => 'BSD 3-Clause', :file => 'LICENSE'}
 
+s.swift_version = '4.2'
 
 s.platform          = :ios
 
