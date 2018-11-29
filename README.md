@@ -48,6 +48,8 @@ Integrate your dependencies using frameworks by adding `use_frameworks!` to your
 
 See [Documentation.playground](https://github.com/AppDeveloperKit/AppDeveloperKit-String/blob/master/Documentation.playground/Contents.swift) for a complete specification of AppDeveloperKit-String presented as a Swift playground.
 
+There is also a [PDF version](https://github.com/AppDeveloperKit/AppDeveloperKit-String/blob/master/Documentation.pdf) available, though the export process from the playground does result in a somewhat large font size.
+
 
 ## Match Examples
 
